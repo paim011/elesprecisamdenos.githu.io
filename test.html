@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Solidariedade</title>
+    <!-- Adicione links para o Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados podem ser adicionados aqui */
+        body {
+            padding-top: 70px; /* Espaço para a barra de navegação fixa no topo */
+            background-color: #f8e8a2; /* Cor de fundo divertida */
+            font-family: Arial, Helvetica, sans-serif,'Times New Roman', serif, Arial, Helvetica, sans-serif; /* Fonte divertida */
+        }
+
+        .navbar {
+            background-color: #ff6f61; /* Cor de fundo da barra de navegação */
+        }
+
+        .navbar-brand {
+            color: #fff; /* Cor do texto do logotipo da barra de navegação */
+            font-size: 28px;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff; /* Cor do ícone de alternância da barra de navegação */
+        }
+
+        .navbar-nav .nav-link {
+            color: #000; /* Cor do texto dos links da barra de navegação */
+        }
+
+        .jumbotron {
+            background-color: #00a9d7; /* Cor de fundo do cabeçalho */
+            color: #fff; /* Cor do texto do cabeçalho */
+        }
+
+        .container {
+            background-color: #fff; /* Cor de fundo das seções */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar as seções */
+        }
+
+        h2 {
+            color: #00a9d7; /* Cor dos títulos das seções */
+        }
+
+        .carousel-caption p {
+            font-size: 18px;
+            color: #000; /* Cor do texto do carrossel */
+        }
+
+        footer {
+            background-color: #ff6f61; /* Cor de fundo do rodapé */
+            color: #fff; /* Cor do texto do rodapé */
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ONG Solidariedade</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-nos">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página -->
+    <header class="jumbotron text-center" id="inicio">
+        <h1>Bem-vindo à ONG Solidariedade</h1>
+        <p>Trabalhando juntos para um mundo melhor.</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container" id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Nossa Missão: Um Mundo Melhor para os Animais de Rua
+            <!-- Conteúdo sobre a ONG -->
+        </p>
+    </div>
+
+    <!-- Galeria de Fotos (Carousel) -->
+    <div class="container" id="projetos">
+        <h2>Projetos</h2>
+        <p>Aqui estão alguns dos projetos que estamos atualmente envolvidos:</p>
+
+        <div id="projetoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagem1.jpg" class="d-block w-100" alt="Projeto 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Resgate e Assistência Médica: Nossa equipe de voluntários dedicados patrulha as ruas em busca de animais em necessidade. Resgatamos cães e gatos feridos, doentes ou em situação de risco, fornecendo-lhes assistência médica imediata. A saúde e o bem-estar deles são nossas principais prioridades.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagem2.jpg" class="d-block w-100" alt="Projeto 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Cuidados de Longo Prazo: Os animais resgatados são trazidos para nosso abrigo, onde recebem abrigo, alimento, cuidados veterinários contínuos e muito carinho. Nossos animais são vacinados, esterilizados e preparados para encontrar lares amorosos.</p>
+                    </div>
+                </div>
+                <div class "carousel-item">
+                    <img src="imagem3.jpg" class="d-block w-100" alt="Projeto 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Campanhas de Adoção Responsável: Trabalhamos incansavelmente para encontrar lares permanentes para nossos protegidos. Promovemos a adoção responsável, garantindo que os novos tutores estejam comprometidos em fornecer amor e cuidados contínuos.</p>
+                    </div>
+                </div>
+                <!-- Adicione mais imagens e descrições conforme necessário -->
+            </div>
+            <a class="carousel-control-prev" href="#projetoCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#projetoCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container" id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através do seguinte endereço de e-mail: <a href="mailto:contato@ongsolidariedade.org">contato@ongsolidariedade.org</a></p>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 ONG Solidariedade</p>
+    </footer>
+
+    <!-- Adicione links para o Bootstrap JS e jQuery (necessários para componentes Bootstrap interativos) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
